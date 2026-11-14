@@ -1,6 +1,6 @@
 ---
 name: update-github-info
-description: Keep the GitHub information page current with recent GitHub Blog and Changelog updates.
+description: Keep the GitHub information page current with recent GitHub Blog, Changelog, and Awesome Copilot workflows.
 on:
   schedule: daily
   workflow_dispatch:
@@ -14,6 +14,7 @@ network:
   allowed:
     - defaults
     - github.blog
+    - awesome-copilot.github.com
     - github.com
 tools:
   edit:
@@ -31,6 +32,7 @@ Read `notes/mona-notes.md` and `site/content/github-info.md` first. Fetch and re
 
 - https://github.blog/latest/
 - https://github.blog/changelog/
+- https://awesome-copilot.github.com/workflows/
 
 Update `site/content/github-info.md` with relevant, verified information from those sources, guided by `notes/mona-notes.md`. Preserve the existing structure and writing style. Do not invent details, and avoid unrelated changes. If there is nothing substantive to update, do not create a pull request.
 
